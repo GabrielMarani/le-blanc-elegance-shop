@@ -8,57 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Luxury White Theme */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 5%;
+    /* Luxury Dark Theme - Le Blanc Identity */
+    --background: 30 25% 8%;
+    --foreground: 43 20% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 5%;
+    --card: 30 20% 12%;
+    --card-foreground: 43 20% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 5%;
+    --popover: 30 20% 12%;
+    --popover-foreground: 43 20% 95%;
 
-    /* Gold as primary */
-    --primary: 43 92% 50%;
-    --primary-foreground: 0 0% 100%;
+    /* Gold as primary - matching the brand */
+    --primary: 43 60% 50%;
+    --primary-foreground: 30 25% 8%;
 
-    /* Elegant gray as secondary */
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 10%;
+    /* Rich brown as secondary */
+    --secondary: 30 30% 25%;
+    --secondary-foreground: 43 20% 95%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 30 15% 25%;
+    --muted-foreground: 43 20% 70%;
 
-    --accent: 43 70% 95%;
-    --accent-foreground: 43 92% 30%;
+    --accent: 43 45% 20%;
+    --accent-foreground: 43 60% 85%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 43 20% 95%;
 
-    --border: 0 0% 89%;
-    --input: 0 0% 89%;
-    --ring: 43 92% 50%;
+    --border: 30 20% 20%;
+    --input: 30 20% 20%;
+    --ring: 43 60% 50%;
 
-    --radius: 0.125rem;
+    --radius: 0.5rem;
 
-    /* Luxury colors */
-    --gold: 43 92% 50%;
-    --gold-light: 43 70% 70%;
-    --gold-dark: 43 92% 35%;
+    /* Luxury brand colors */
+    --gold: 43 60% 50%;
+    --gold-light: 43 50% 65%;
+    --gold-dark: 43 70% 35%;
     
-    --luxury-black: 0 0% 5%;
-    --luxury-white: 0 0% 100%;
-    --luxury-gray: 0 0% 45%;
+    --luxury-black: 30 25% 8%;
+    --luxury-brown: 30 30% 25%;
+    --luxury-cream: 43 20% 95%;
+    --luxury-white: 43 10% 98%;
 
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(43 92% 50%), hsl(43 70% 70%));
-    --gradient-elegant: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 96%));
-    --gradient-dark: linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 15%));
+    --gradient-gold: linear-gradient(135deg, hsl(43 60% 50%), hsl(43 50% 65%));
+    --gradient-dark: linear-gradient(180deg, hsl(30 25% 8%), hsl(30 20% 12%));
+    --gradient-luxury: linear-gradient(135deg, hsl(30 30% 25%), hsl(30 25% 8%));
 
     /* Shadows */
-    --shadow-elegant: 0 4px 20px -2px hsl(0 0% 0% / 0.1);
-    --shadow-gold: 0 4px 20px -2px hsl(43 92% 50% / 0.2);
-    --shadow-luxury: 0 10px 40px -10px hsl(0 0% 0% / 0.15);
+    --shadow-elegant: 0 4px 20px -2px hsl(30 25% 8% / 0.5);
+    --shadow-gold: 0 4px 20px -2px hsl(43 60% 50% / 0.3);
+    --shadow-luxury: 0 10px 40px -10px hsl(30 25% 8% / 0.8);
   }
 
   .dark {

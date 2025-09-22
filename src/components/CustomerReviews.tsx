@@ -27,7 +27,7 @@ const reviews = [
 
 const CustomerReviews = () => {
   return (
-    <section className="py-20 px-4 bg-background fade-in-element">
+    <section className="py-20 px-4 bg-background fade-in-element border-t border-border">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-4">

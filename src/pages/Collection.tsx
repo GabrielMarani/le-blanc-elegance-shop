@@ -6,16 +6,24 @@ import { Card } from "@/components/ui/card";
 import { Heart, ShoppingBag, Filter } from "lucide-react";
 import { useCart } from "@/hooks/useCart";
 import { toast } from "sonner";
+import ring1 from "@/assets/ring-1.jpg";
+import ring2 from "@/assets/ring-1.jpg";
+import necklace1 from "@/assets/necklace-1.jpg";
+import necklace2 from "@/assets/necklace-1.jpg";
+import earrings1 from "@/assets/earrings-1.jpg";
+import earrings2 from "@/assets/earrings-1.jpg";
+import bracelet1 from "@/assets/ring-1.jpg";
+import bracelet2 from "@/assets/necklace-1.jpg";
 
 const products = [
-  { id: 1, name: "Anel Eternidade", price: "R$ 8.500,00", priceValue: 8500, category: "aneis", image: "/ring-1.jpg", description: "Anel em ouro branco 18k com diamantes" },
-  { id: 2, name: "Colar Imperatriz", price: "R$ 12.300,00", priceValue: 12300, category: "colares", image: "/necklace-1.jpg", description: "Colar em ouro amarelo com esmeraldas" },
-  { id: 3, name: "Brincos Royale", price: "R$ 6.800,00", priceValue: 6800, category: "brincos", image: "/earrings-1.jpg", description: "Brincos em ouro rosé com pérolas" },
-  { id: 4, name: "Pulseira Infinito", price: "R$ 5.200,00", priceValue: 5200, category: "pulseiras", image: "/bracelet-1.jpg", description: "Pulseira em ouro amarelo 18k" },
-  { id: 5, name: "Anel Solitário", price: "R$ 15.000,00", priceValue: 15000, category: "aneis", image: "/ring-2.jpg", description: "Anel solitário com diamante 1ct" },
-  { id: 6, name: "Colar Pérolas", price: "R$ 9.800,00", priceValue: 9800, category: "colares", image: "/necklace-2.jpg", description: "Colar de pérolas Akoya" },
-  { id: 7, name: "Brincos Diamante", price: "R$ 11.500,00", priceValue: 11500, category: "brincos", image: "/earrings-2.jpg", description: "Brincos com diamantes lapidação brilhante" },
-  { id: 8, name: "Pulseira Tennis", price: "R$ 18.900,00", priceValue: 18900, category: "pulseiras", image: "/bracelet-2.jpg", description: "Pulseira tennis com diamantes" },
+  { id: 1, name: "Anel Eternidade", price: "R$ 8.500,00", priceValue: 8500, category: "aneis", image: ring1, description: "Anel em ouro branco 18k com diamantes" },
+  { id: 2, name: "Colar Imperatriz", price: "R$ 12.300,00", priceValue: 12300, category: "colares", image: necklace1, description: "Colar em ouro amarelo com esmeraldas" },
+  { id: 3, name: "Brincos Royale", price: "R$ 6.800,00", priceValue: 6800, category: "brincos", image: earrings1, description: "Brincos em ouro rosé com pérolas" },
+  { id: 4, name: "Pulseira Infinito", price: "R$ 5.200,00", priceValue: 5200, category: "pulseiras", image: bracelet1, description: "Pulseira em ouro amarelo 18k" },
+  { id: 5, name: "Anel Solitário", price: "R$ 15.000,00", priceValue: 15000, category: "aneis", image: ring2, description: "Anel solitário com diamante 1ct" },
+  { id: 6, name: "Colar Pérolas", price: "R$ 9.800,00", priceValue: 9800, category: "colares", image: necklace2, description: "Colar de pérolas Akoya" },
+  { id: 7, name: "Brincos Diamante", price: "R$ 11.500,00", priceValue: 11500, category: "brincos", image: earrings2, description: "Brincos com diamantes lapidação brilhante" },
+  { id: 8, name: "Pulseira Tennis", price: "R$ 18.900,00", priceValue: 18900, category: "pulseiras", image: bracelet2, description: "Pulseira tennis com diamantes" },
 ];
 
 const categories = [
@@ -82,7 +90,7 @@ const Collection = () => {
             {filteredProducts.map((product) => (
               <Card
                 key={product.id}
-                className="group overflow-hidden hover:shadow-luxury transition-all duration-300 border-0"
+                className="group overflow-hidden hover:shadow-luxury transition-all duration-300 border border-border bg-card"
               >
                 <div className="relative overflow-hidden h-64 bg-gradient-to-br from-secondary to-background">
                   <img

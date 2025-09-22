@@ -61,6 +61,8 @@ export default {
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
         'montserrat': ['Montserrat', 'sans-serif'],
+        'great-vibes': ['Great Vibes', 'cursive'],
+        'pinyon': ['Pinyon Script', 'cursive'],
       },
       borderRadius: {
         lg: "var(--radius)",

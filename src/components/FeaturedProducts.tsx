@@ -3,6 +3,9 @@ import { Card } from "@/components/ui/card";
 import { Heart, ShoppingBag } from "lucide-react";
 import { useCart } from "@/hooks/useCart";
 import { toast } from "sonner";
+import ring1 from "@/assets/ring-1.jpg";
+import necklace1 from "@/assets/necklace-1.jpg";
+import earrings1 from "@/assets/earrings-1.jpg";
 
 const featuredProducts = [
   {
@@ -10,7 +13,7 @@ const featuredProducts = [
     name: "Anel Eternidade",
     price: "R$ 8.500,00",
     priceValue: 8500,
-    image: "/ring-1.jpg",
+    image: ring1,
     description: "Anel em ouro branco 18k com diamantes"
   },
   {
@@ -18,7 +21,7 @@ const featuredProducts = [
     name: "Colar Imperatriz",
     price: "R$ 12.300,00",
     priceValue: 12300,
-    image: "/necklace-1.jpg",
+    image: necklace1,
     description: "Colar em ouro amarelo com esmeraldas"
   },
   {
@@ -26,7 +29,7 @@ const featuredProducts = [
     name: "Brincos Royale",
     price: "R$ 6.800,00",
     priceValue: 6800,
-    image: "/earrings-1.jpg",
+    image: earrings1,
     description: "Brincos em ouro rosé com pérolas"
   }
 ];
@@ -46,7 +49,7 @@ const FeaturedProducts = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-background fade-in-element">
+    <section className="py-20 px-4 bg-background fade-in-element border-t border-border">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -62,7 +65,7 @@ const FeaturedProducts = () => {
           {featuredProducts.map((product, index) => (
             <Card
               key={product.id}
-              className="group overflow-hidden hover:shadow-luxury transition-all duration-500 border-0 bg-card"
+              className="group overflow-hidden hover:shadow-luxury transition-all duration-500 border border-border bg-card"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="relative overflow-hidden h-80 bg-gradient-to-br from-secondary to-background">

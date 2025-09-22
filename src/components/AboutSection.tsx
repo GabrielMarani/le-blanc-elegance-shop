@@ -1,4 +1,5 @@
 import { Award, Gem, Shield, Clock } from "lucide-react";
+import aboutImage from "@/assets/about-jewelry.jpg";
 
 const AboutSection = () => {
   const features = [
@@ -25,7 +26,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-secondary fade-in-element">
+    <section className="py-20 bg-gradient-to-b from-background via-secondary to-background fade-in-element border-t border-border">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -62,9 +63,9 @@ const AboutSection = () => {
           </div>
           
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-gold-light to-gold opacity-10 rounded-lg" />
+            <div className="absolute inset-0 bg-gradient-to-br from-gold/20 to-gold-dark/20 rounded-lg" />
             <img
-              src="/about-jewelry.jpg"
+              src={aboutImage}
               alt="Le Blanc Atelier"
               className="rounded-lg shadow-luxury w-full h-[500px] object-cover"
             />

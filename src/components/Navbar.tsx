@@ -3,6 +3,7 @@ import { Menu, X, ShoppingBag, User, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import LoginModal from "./LoginModal";
+import Logo from "./Logo";
 import { useCart } from "@/hooks/useCart";
 import { Link } from "react-router-dom";
 
@@ -32,17 +33,15 @@ const Navbar = () => {
       <nav
         className={`fixed w-full z-50 transition-all duration-500 ${
           isScrolled 
-            ? "bg-background/95 backdrop-blur-md shadow-elegant py-3" 
-            : "bg-transparent py-6"
+            ? "bg-background/95 backdrop-blur-md shadow-luxury py-2" 
+            : "bg-transparent py-4"
         }`}
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <h1 className="font-playfair text-2xl md:text-3xl font-bold text-primary tracking-wider">
-                Le Blanc
-              </h1>
+              <Logo variant={isScrolled ? "light" : "light"} className="scale-75 md:scale-100" />
             </Link>
 
             {/* Desktop Navigation */}

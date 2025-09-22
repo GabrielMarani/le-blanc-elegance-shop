@@ -1,17 +1,16 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-luxury-black text-luxury-white py-12">
+    <footer className="bg-luxury-black text-foreground py-12 border-t border-border">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="font-playfair text-2xl font-bold text-primary mb-4">
-              Le Blanc
-            </h3>
-            <p className="font-montserrat text-sm text-luxury-gray mb-4">
+            <Logo variant="light" className="scale-75 origin-left mb-4" />
+            <p className="font-montserrat text-sm text-muted-foreground mb-4">
               Joias exclusivas que contam histórias e celebram momentos únicos.
             </p>
             <div className="flex space-x-3">
