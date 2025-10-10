@@ -41,7 +41,8 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <Logo variant={isScrolled ? "light" : "light"} className="scale-75 md:scale-100" />
+              <Logo variant={isScrolled ? "light" : "light"} size="sm" className="md:hidden" />
+              <Logo variant={isScrolled ? "light" : "light"} size="md" className="hidden md:block" />
             </Link>
 
             {/* Desktop Navigation */}
