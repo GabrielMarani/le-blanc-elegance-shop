@@ -11,7 +11,7 @@ const Logo = ({ className = "", variant = "light" }: LogoProps) => {
       <img 
         src={logoImage} 
         alt="Le Blanc Joalheria" 
-        className="h-16 w-auto object-contain"
+        className="h-20 w-20 object-contain transition-all duration-300"
       />
     </div>
   );
