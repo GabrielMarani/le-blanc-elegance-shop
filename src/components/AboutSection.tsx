@@ -26,7 +26,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background via-secondary to-background fade-in-element border-t border-border">
+    <section className="py-20 bg-gradient-to-b from-background via-secondary to-background animate-fade-in border-t border-border">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>

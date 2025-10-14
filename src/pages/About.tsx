@@ -52,7 +52,7 @@ const About = () => {
             
             <div className="max-w-4xl mx-auto">
               {milestones.map((milestone, index) => (
-                <div key={index} className="flex items-center mb-8 fade-in-element">
+                <div key={index} className="flex items-center mb-8 animate-fade-in">
                   <div className="w-24 text-right mr-8">
                     <span className="font-playfair text-2xl font-bold text-primary">
                       {milestone.year}
@@ -86,7 +86,7 @@ const About = () => {
               {values.map((value, index) => (
                 <div
                   key={index}
-                  className="text-center fade-in-element"
+                  className="text-center animate-fade-in"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="text-primary mb-4 flex justify-center">
