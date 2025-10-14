@@ -5,6 +5,7 @@ import FeaturedProducts from "@/components/FeaturedProducts";
 import CustomerReviews from "@/components/CustomerReviews";
 import Footer from "@/components/Footer";
 import AboutSection from "@/components/AboutSection";
+import Map from "@/components/Map";
 
 const Index = () => {
   useEffect(() => {
@@ -36,6 +37,7 @@ const Index = () => {
       <FeaturedProducts />
       <AboutSection />
       <CustomerReviews />
+      <Map />
       <Footer />
     </div>
   );
