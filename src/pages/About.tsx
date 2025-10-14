@@ -39,11 +39,11 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      <section className="pt-24 pb-20">
+      <div className="pt-24">
         <AboutSection />
         
         {/* Timeline */}
-        <div className="py-20 bg-secondary">
+        <div className="py-20 bg-secondary border-t border-border">
           <div className="container mx-auto px-4">
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground text-center mb-12">
               Nossa Jornada
@@ -75,7 +75,7 @@ const About = () => {
         </div>
 
         {/* Values */}
-        <div className="py-20">
+        <div className="py-20 border-t border-border">
           <div className="container mx-auto px-4">
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground text-center mb-12">
               Nossos Valores
@@ -103,7 +103,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
       
       <Footer />
     </div>
