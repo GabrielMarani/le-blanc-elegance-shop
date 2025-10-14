@@ -1,24 +1,8 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { Icon } from 'leaflet';
-import 'leaflet/dist/leaflet.css';
 import { MapPin } from 'lucide-react';
 
-// Fix for default marker icon
-import iconUrl from 'leaflet/dist/images/marker-icon.png';
-import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
-import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
-
-const defaultIcon = new Icon({
-  iconUrl,
-  iconRetinaUrl,
-  shadowUrl,
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-});
-
 const Map = () => {
-  // São Paulo coordinates
-  const position: [number, number] = [-23.5505, -46.6333];
+  // São Paulo coordinates: -23.5505, -46.6333
+  const mapUrl = "https://www.openstreetmap.org/export/embed.html?bbox=-46.6533%2C-23.5605%2C-46.6133%2C-23.5405&layer=mapnik&marker=-23.5505%2C-46.6333";
 
   return (
     <section className="py-20 bg-gradient-to-b from-background to-secondary border-t border-border">
@@ -33,26 +17,16 @@ const Map = () => {
           </p>
         </div>
 
-        <div className="relative w-full h-[500px] rounded-lg overflow-hidden shadow-luxury">
-          <MapContainer
-            center={position}
-            zoom={13}
-            style={{ height: '100%', width: '100%' }}
-            className="z-0"
-          >
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={position} icon={defaultIcon}>
-              <Popup>
-                <div className="text-center p-2">
-                  <h3 className="font-playfair font-bold text-lg mb-1">Le Blanc Joalheria</h3>
-                  <p className="text-sm text-muted-foreground">São Paulo, Brasil</p>
-                </div>
-              </Popup>
-            </Marker>
-          </MapContainer>
+        <div className="relative w-full h-[500px] rounded-lg overflow-hidden shadow-luxury border border-border">
+          <iframe
+            width="100%"
+            height="100%"
+            frameBorder="0"
+            scrolling="no"
+            src={mapUrl}
+            className="w-full h-full"
+            title="Localização Le Blanc Joalheria"
+          />
         </div>
 
         <div className="mt-8 text-center">
